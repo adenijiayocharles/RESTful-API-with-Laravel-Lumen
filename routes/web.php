@@ -15,6 +15,8 @@ $router->get('/', function () use ($router) {
     return $router->app->version();
 });
 
-$router->group(["prefix" => "api"], function () use ($router) {
-    $router->get("authors", "AuthorController@showAllAuthors");
+$router->group(["prefix" => "api/authors"], function () use ($router) {
+    $router->get("/", "AuthorController@showAllAuthors");
+    $router->get("{id}", "AuthorController@getAuthor");
+    $router->post("/", "AuthorController@createAuthor");
 });
