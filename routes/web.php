@@ -18,5 +18,7 @@ $router->get('/', function () use ($router) {
 $router->group(["prefix" => "api/authors"], function () use ($router) {
     $router->get("/", "AuthorController@showAllAuthors");
     $router->get("{id}", "AuthorController@getAuthor");
+    $router->delete("{id}", "AuthorController@deleteAuthor");
     $router->post("/", "AuthorController@createAuthor");
+    $router->put("/{id}", "AuthorController@updateAuthor");
 });
