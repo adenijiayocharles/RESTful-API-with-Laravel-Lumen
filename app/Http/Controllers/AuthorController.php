@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\Author;
-class ExampleController extends Controller
+class AuthorController extends Controller
 {
     public function showAllAuthors()
     {
