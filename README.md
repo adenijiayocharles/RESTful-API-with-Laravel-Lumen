@@ -1,4 +1,4 @@
-#RESTful API with Laravel Lumen
+# RESTful API with Laravel Lumen
 
 ### Author Endpoints
 *Get all authors - GET /api/authors
